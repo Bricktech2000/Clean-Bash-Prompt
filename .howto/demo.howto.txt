@@ -1,0 +1,14 @@
+cd /mnt/c/Users/brick/Documents/Files/Projects/Programming
+node &
+sleep 1
+clear
+false #simulate an error
+cd Website/ #cd into git repo
+touch file #modify file
+git add file #stage file
+git reset --hard #reset to fresh branch
+cd .. #cd out of git repo
+kill %% #take down the server
+node > /dev/null & #get the server back online
+sudo su #connect to root
+exit #disconnect from root
