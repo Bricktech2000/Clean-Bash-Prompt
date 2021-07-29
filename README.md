@@ -6,7 +6,7 @@ A clean custom bash prompt designed for maximum efficiency
 
 ![screenshot](./screenshot.png)
 
-The bash prompt is divided into 3 parts:
+This bash prompt is divided into 3 parts:
 1. Current username
     * It is gray when logged into a normal user and  becomes cyan when logged into a user with sudo privileges (`$UID=0`)
 2. Current path
