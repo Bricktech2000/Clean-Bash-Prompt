@@ -10,8 +10,8 @@ This bash prompt is divided into 3 parts:
 
 1. Current username
    - It is gray when logged into a normal user and becomes cyan when logged into a user with sudo privileges (`$UID=0`)
-2. Current path
-   - It displays the two deepest directories from the current path (`$PWD`)
+2. Current working directory
+   - It displays the two deepest directories from the current working directory (`$PWD`)
    - It is blue by default and turns red when the previous command returned an error (`$?!=0`)
 3. Extra info
    - When inside a GIT repository, it displays the current active branch
