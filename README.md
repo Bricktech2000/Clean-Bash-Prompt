@@ -21,14 +21,6 @@ This bash prompt is divided into 3 parts:
         * It displays a blue _live_ when the process is running and a red _down_ when it isn't
         * After installation, one can modify which process status is displayed
 
-* Path changes to red color on non-zero exit code (error)
-* Branch is displayed when inside Git repository
-  * Fresh branch is colored blue
-  * Modified branch is colored yellow
-  * Staged branch is colored green
-* asdf
-* Username changes to cyan color when `$UID` is 0 (root)
-
 ## Installation
 
 Run the following to install the promt in your `.bashrc`
