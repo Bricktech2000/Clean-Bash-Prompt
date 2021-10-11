@@ -1,0 +1,8 @@
+alias c='clear'
+alias s='git status'
+alias d='git diff'
+alias a='git add'
+alias m='git commit -m'
+alias l='git log'
+alias r='git reset'
+alias p='git push'
