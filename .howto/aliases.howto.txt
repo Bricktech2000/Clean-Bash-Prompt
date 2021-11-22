@@ -1,5 +1,5 @@
 alias c='clear'
-alias s='git status'
+alias s='mv ..git .git > /dev/null; git status'
 alias d='git diff'
 alias a='git add'
 alias m='git commit -m'
