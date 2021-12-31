@@ -44,3 +44,12 @@ https://stackoverflow.com/questions/5719030/bash-silently-kill-background-functi
 
 https://stackoverflow.com/questions/602912/how-do-you-echo-a-4-digit-unicode-character-in-bash
 https://r12a.github.io/app-conversion/
+
+v2:
+https://askubuntu.com/questions/468901/how-to-show-only-hidden-files-in-terminal
+https://unix.stackexchange.com/questions/3454/grabbing-the-first-x-characters-for-a-string-from-a-pipe
+https://devconnected.com/how-to-count-files-in-directory-on-linux/
+https://askubuntu.com/questions/811210/how-can-i-make-ls-only-display-files
+https://stackoverflow.com/questions/50521798/how-to-check-if-a-number-is-within-a-range-in-shell
+https://unix.stackexchange.com/questions/207210/make-pwd-result-in-terms-of
+https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array-in-bash

@@ -1,0 +1,83 @@
+
+is git repo?
+git branch
+git status
+hidden files?
+last command error?
+process running?
+is root?
+is folder capitalized?
+directory contents
+
+
+
+
+unicode dot matrix: https://en.wikipedia.org/wiki/Braille_Patterns
+arrow symbol unicode: https://en.wikipedia.org/wiki/Arrow_(symbol)
+approx equal symbol: -
+centered x symbol: https://en.wikipedia.org/wiki/X_mark
+circle symbol: https://www.alt-codes.net/circle-symbols
+lightning symbol unicode: https://fsymbols.com/signs/hazard/
+center dot character: https://www.compart.com/en/unicode/U+2022
+
+
+
+
+
+if is root:
+  (white) 🗲
+
+if hidden files in directory:
+  (light gray)
+else:
+  (white)
+(first letter of current directory)
+number of files in directory:
+  ⡀⡄⡆⡇
+number of folders in directory:
+  ⡀⡄⡆⡇
+
+if last command error:
+  (red) ×
+else:
+  (green) ✓ (thanks github copilot, didn't want to look up that check mark)
+(first character of current directory)
+
+if is git repo:
+  if all untracked:
+    (orange)
+  if some staged:
+    (green)
+  if all commited:
+    (blue)
+  🡲
+
+
+if jobs running:
+  (light blue) •
+if process down:
+  (bold red) ×
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
