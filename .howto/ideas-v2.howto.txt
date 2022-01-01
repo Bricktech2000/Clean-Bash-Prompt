@@ -27,21 +27,20 @@ center dot character: https://www.compart.com/en/unicode/U+2022
 if is root:
   (white) 🗲
 
-if hidden files in directory:
-  (light gray)
-else:
-  (white)
-(first letter of current directory)
-number of files in directory:
-  ⡀⡄⡆⡇
-number of folders in directory:
-  ⡀⡄⡆⡇
-
 if last command error:
   (red) ×
 else:
   (green) ✓ (thanks github copilot, didn't want to look up that check mark)
 (first character of current directory)
+
+if hidden files in directory:
+  (light gray)
+else:
+  (white)
+number of files in directory:
+  ⡀⡄⡆⡇
+number of folders in directory:
+  ⡀⡄⡆⡇
 
 if is git repo:
   if all untracked:
