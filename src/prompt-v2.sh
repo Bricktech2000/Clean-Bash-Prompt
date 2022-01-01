@@ -26,7 +26,7 @@ export PS1='`
 
   # letter="\`pwd | rev | cut -d '/' -f 1 | rev | cut -c1\`";
   if [[ $status -gt 0 ]];
-    then printf "\[\033[1m\033[91m\]×";
+    then printf "\[\033[1m\033[91m\]✗";
     else printf "\[\033[1m\033[38;5;015m\]✓";
   fi;
   printf "\[\033[0m\]";

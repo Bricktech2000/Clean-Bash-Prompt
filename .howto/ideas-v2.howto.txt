@@ -19,6 +19,7 @@ centered x symbol: https://en.wikipedia.org/wiki/X_mark
 circle symbol: https://www.alt-codes.net/circle-symbols
 lightning symbol unicode: https://fsymbols.com/signs/hazard/
 center dot character: https://www.compart.com/en/unicode/U+2022
+check and cross symbol: https://www.compart.com/en/unicode/U+2611
 
 
 
@@ -28,7 +29,7 @@ if is root:
   (white) 🗲
 
 if last command error:
-  (red) ×
+  (red) ✗
 else:
   (green) ✓ (thanks github copilot, didn't want to look up that check mark)
 (first character of current directory)
