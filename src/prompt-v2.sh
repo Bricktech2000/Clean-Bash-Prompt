@@ -3,32 +3,11 @@ export CLEAN_PROMPT_CHECK_PROC="python3"
 export PS1='`
   status=$?;
 
-
-  printf "        ";
-  printf "\[\033[38;5;008m\]\`dirs | rev | cut -d '/' -f 1 | rev\` / ";
-  printf "\`ls | tr \"\n\" \" \"\`";
-  printf "\r";
-
   if [[ $UID -eq 0 ]];
     then printf "\[\033[1m\033[38;5;015m\]🗲 \[\033[0m\]";
     else printf "\[\033[1m\033[38;5;008m\]\[\033[0m\]";
   fi;
 
-  # dirs_path="\`dirs\`";
-  # IFS="/" read -r -a array <<< "$dirs_path";
-  # for directory in "${array[@]}"; do
-  #   letter="\`echo "$directory" | head -c 1\`"
-  #   printf "\[\033[1m\033[38;5;007m\]$letter\[\033[0m\]";
-  # done;
-
-  # letter1="\`pwd | rev | cut -d '/' -f 1 | rev | cut -c1\`";
-  # letter2="\`pwd | rev | cut -d '/' -f 1 | rev | cut -c2\`";
-  # if [[ $letter1 != "." ]];
-  #   then printf "\[\033[1m\033[38;5;007m\]$letter1\[\033[0m\]";
-  #   else printf "\[\033[1m\033[38;5;008m\]$letter2\[\033[0m\]";
-  # fi;
-
-  # letter="\`pwd | rev | cut -d '/' -f 1 | rev | cut -c1\`";
   if [[ $status -gt 0 ]];
     then printf "\[\033[1m\033[91m\]✗";
     else printf "\[\033[1m\033[38;5;015m\]✓";
