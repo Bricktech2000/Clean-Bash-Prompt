@@ -25,23 +25,19 @@ check and cross symbol: https://www.compart.com/en/unicode/U+2611
 
 
 
+number of files in directory:
+  (white) ⡀⡄⡆⡇
+number of folders in directory:
+  (white) ⡀⡄⡆⡇
+
 if is root:
   (white) 🗲
 
 if last command error:
   (red) ✗
 else:
-  (green) ✓ (thanks github copilot, didn't want to look up that check mark)
+  # (white) ✓ (thanks github copilot, didn't want to look up that check mark)
 (first character of current directory)
-
-if hidden files in directory:
-  (light gray)
-else:
-  (white)
-number of files in directory:
-  ⡀⡄⡆⡇
-number of folders in directory:
-  ⡀⡄⡆⡇
 
 if is git repo:
   if all untracked:
@@ -49,7 +45,7 @@ if is git repo:
   if some staged:
     (green)
   if all commited:
-    (blue)
+    (white)
   🡲
 
 

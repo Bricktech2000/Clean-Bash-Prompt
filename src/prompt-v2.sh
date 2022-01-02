@@ -3,18 +3,6 @@ export CLEAN_PROMPT_CHECK_PROC="python3"
 export PS1='`
   status=$?;
 
-  if [[ $UID -eq 0 ]];
-    then printf "\[\033[1m\033[38;5;015m\]🗲 \[\033[0m\]";
-    else printf "\[\033[1m\033[38;5;008m\]\[\033[0m\]";
-  fi;
-
-  if [[ $status -gt 0 ]];
-    then printf "\[\033[1m\033[91m\]✗";
-    else printf "\[\033[1m\033[38;5;015m\]✓";
-  fi;
-  printf "\[\033[0m\]";
-
-
   file_count="\`ls -p | grep -v / | wc -l\`";
   folder_count="\`ls -p | grep -e / | wc -l\`";
   ls -ld .!(|.) &> /dev/null
@@ -22,6 +10,8 @@ export PS1='`
     then printf "\[\033[1m\033[38;5;015m\]"; 
     else printf "\[\033[1m\033[38;5;007m\]";
   fi;
+
+  printf "\[\033[1m\033[38;5;015m\]"; 
   if (( file_count <= 0 )); then
     if (( folder_count <= 0 ));                      then printf "⠀"; fi;
     if (( folder_count > 0 && $folder_count <= 1 )); then printf "⢀"; fi;
@@ -56,6 +46,17 @@ export PS1='`
     if (( folder_count > 1 && $folder_count <= 4 )); then printf "⣧"; fi;
     if (( folder_count > 4 && $folder_count <= 8 )); then printf "⣷"; fi;
     if (( folder_count > 8 ));                       then printf "⣿"; fi;
+  fi;
+  printf "\[\033[0m\]";
+
+  if [[ $UID -eq 0 ]];
+    then printf "\[\033[1m\033[38;5;015m\]🗲 \[\033[0m\]";
+    # else printf "\[\033[1m\033[38;5;008m\]\[\033[0m\]";
+  fi;
+
+  if [[ $status -gt 0 ]];
+    then printf "\[\033[1m\033[91m\]✗";
+    # else printf "\[\033[1m\033[38;5;015m\]✓";
   fi;
   printf "\[\033[0m\]";
 
