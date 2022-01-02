@@ -3,7 +3,11 @@ export CLEAN_PROMPT_CHECK_PROC="python3"
 export PS1='`
   status=$?;
 
-  printf "        \[\033[38;5;008m\]\`dirs\`\r";
+
+  printf "        ";
+  printf "\[\033[38;5;008m\]\`dirs | rev | cut -d '/' -f 1 | rev\` / ";
+  printf "\`ls | tr \"\n\" \" \"\`";
+  printf "\r";
 
   if [[ $UID -eq 0 ]];
     then printf "\[\033[1m\033[38;5;015m\]🗲 \[\033[0m\]";
