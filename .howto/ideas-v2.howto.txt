@@ -18,7 +18,7 @@ approx equal symbol: -
 centered x symbol: https://en.wikipedia.org/wiki/X_mark
 circle symbol: https://www.alt-codes.net/circle-symbols
 lightning symbol unicode: https://fsymbols.com/signs/hazard/
-center dot character: https://www.compart.com/en/unicode/U+2022
+center circle character: https://www.alt-codes.net/circle-symbols
 check and cross symbol: https://www.compart.com/en/unicode/U+2611
 
 
@@ -33,6 +33,11 @@ number of folders in directory:
 if is root:
   (white) 🗲
 
+if jobs running:
+  (bold light blue) ○
+if process down:
+  (bold red) ×
+
 if last command error:
   (red) ✗
 else:
@@ -46,13 +51,9 @@ if is git repo:
     (green)
   if all commited:
     (white)
-  🡲
+  ⯈
 
 
-if jobs running:
-  (light blue) •
-if process down:
-  (bold red) ×
 
 
 
