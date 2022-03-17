@@ -7,11 +7,11 @@ export PS1='`
   folder_count="\`ls -p | grep -e / | wc -l\`";
   ls -ld .!(|.) &> /dev/null
   if [[ $? -eq 0 ]];
-    then printf "\[\033[1m\033[38;5;015m\]"; 
+    then printf "\[\033[1m\033[38;5;015m\]";
     else printf "\[\033[1m\033[38;5;007m\]";
   fi;
 
-  printf "\[\033[1m\033[38;5;015m\]"; 
+  printf "\[\033[1m\033[38;5;015m\]";
   if (( file_count <= 0 )); then
     if (( folder_count <= 0 ));                      then printf "⠀"; fi;
     if (( folder_count > 0 && $folder_count <= 1 )); then printf "⢀"; fi;
@@ -47,7 +47,20 @@ export PS1='`
     if (( folder_count > 4 && $folder_count <= 8 )); then printf "⣷"; fi;
     if (( folder_count > 8 ));                       then printf "⣿"; fi;
   fi;
-  printf "\[\033[0m\] ";
+
+  pwd_hash_hex_string="$(printf "\`pwd | rev | cut -d "/" -f 2 | rev\`" | sha1sum | cut -d " " -f 1 | cut -c 1-2)";
+  pwd_hash_unicode_integer="$((16#2800 + 16#$pwd_hash_hex_string))";
+  pwd_hash_unicode_hex="$(printf "%x" $pwd_hash_unicode_integer)";
+  pwd_hash_unicode_character="\U$pwd_hash_unicode_hex";
+  printf "$pwd_hash_unicode_character";
+
+  pwd_hash_hex_string="$(printf "\`pwd | rev | cut -d "/" -f 1 | rev\`" | sha1sum | cut -d " " -f 1 | cut -c 1-2)";
+  pwd_hash_unicode_integer="$((16#2800 + 16#$pwd_hash_hex_string))";
+  pwd_hash_unicode_hex="$(printf "%x" $pwd_hash_unicode_integer)";
+  pwd_hash_unicode_character="\U$pwd_hash_unicode_hex";
+  printf "$pwd_hash_unicode_character";
+
+  printf " \[\033[0m\]";
 
   if [[ $UID -eq 0 ]];
     then printf "\[\033[1m\033[38;5;015m\]🗲 \[\033[0m\]";

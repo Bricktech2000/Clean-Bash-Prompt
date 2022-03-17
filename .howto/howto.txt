@@ -56,3 +56,9 @@ https://stackoverflow.com/questions/10586153/how-to-split-a-string-into-an-array
 https://serverfault.com/questions/105838/make-ls-print-it-all-on-one-line-like-in-terminal/105841
 https://stackoverflow.com/questions/4233159/grep-regex-whitespace-behavior
 https://stackoverflow.com/questions/6756360/how-do-i-get-previous-executed-command-in-a-bash-script
+
+https://stackoverflow.com/questions/7222746/checksum-on-string
+https://stackoverflow.com/questions/13280131/hexadecimal-to-decimal-in-shell-script
+https://stackoverflow.com/questions/6348902/how-can-i-add-numbers-in-a-bash-script
+https://unix.stackexchange.com/questions/12273/in-bash-how-can-i-convert-a-unicode-codepoint-0-9a-f-into-a-printable-charact
+https://stackoverflow.com/questions/378829/convert-decimal-to-hexadecimal-in-unix-shell-script

@@ -30,6 +30,11 @@ number of files in directory:
 number of folders in directory:
   (white) ⡀⡄⡆⡇
 
+partent directory name:
+ (white) (braille hash)
+current directory name:
+ (white) (braille hash)
+
 if is root:
   (white) 🗲
 
@@ -49,7 +54,7 @@ if is git repo:
     (orange)
   if some staged:
     (green)
-  if all commited:
+  if all committed:
     (white)
   ⯈
 
