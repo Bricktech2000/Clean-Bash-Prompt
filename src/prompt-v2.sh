@@ -5,7 +5,7 @@ export PS1='`
 
   file_count="\`ls -p | grep -v / | wc -l\`";
   folder_count="\`ls -p | grep -e / | wc -l\`";
-  ls -ld .!(|.) &> /dev/null
+  ls -ld .[^.]* &> /dev/null
   if [[ $? -eq 0 ]];
     then printf "\[\033[1m\033[38;5;015m\]";
     else printf "\[\033[1m\033[38;5;007m\]";
