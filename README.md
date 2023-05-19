@@ -1,6 +1,6 @@
 # Clean Bash Prompt
 
-A clean custom bash prompt designed for maximum efficiency
+_A clean custom bash prompt designed for maximum efficiency_
 
 ## Features
 
